@@ -1,4 +1,6 @@
+"use client";
 import Image from "next/image";
+import { House, Recycle, User } from "@phosphor-icons/react";
 
 export default function Home() {
   return (
@@ -53,18 +55,15 @@ export default function Home() {
 
       {/* Footer - Bottom App Bar */}
       <footer className="fixed md:absolute bottom-0 left-0 right-0 border-t border-gray-200 bg-white p-4 z-10">
-        <nav className="flex justify-around">
-          <a href="#" className="text-gray-600 hover:text-gray-900 text-sm flex flex-col items-center gap-1">
-            <Image src="/file.svg" alt="" width={20} height={20} />
-            Learn
+        <nav className="flex justify-around relative gap-16">
+          <a href="#" className="text-gray-600 hover:text-gray-900 flex flex-col items-center">
+        <House size={28} />
           </a>
-          <a href="#" className="text-gray-600 hover:text-gray-900 text-sm flex flex-col items-center gap-1">
-            <Image src="/window.svg" alt="" width={20} height={20} />
-            Examples
+          <a href="#" className="absolute -top-8 left-1/2 -translate-x-1/2 bg-green-500 p-4 rounded-full shadow-lg hover:bg-green-600 transition-colors">
+        <Recycle size={32} color="white"/>
           </a>
-          <a href="#" className="text-gray-600 hover:text-gray-900 text-sm flex flex-col items-center gap-1">
-            <Image src="/globe.svg" alt="" width={20} height={20} />
-            Discover
+          <a href="#" className="text-gray-600 hover:text-gray-900 flex flex-col items-center">
+        <User size={28} />
           </a>
         </nav>
       </footer>
