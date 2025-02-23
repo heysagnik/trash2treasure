@@ -26,7 +26,11 @@ export default function Home() {
             <div className="bg-gray-50 p-4 rounded-lg border border-gray-100">
               <h2 className="font-semibold mb-2 text-gray-900">Getting Started</h2>
               <p className="text-sm text-gray-600">
-                Edit <code className="bg-gray-100 px-1 py-0.5 rounded">src/app/page.tsx</code> to start building your app.
+                Edit{" "}
+                <code className="bg-gray-100 px-1 py-0.5 rounded">
+                  src/app/page.tsx
+                </code>{" "}
+                to start building your app.
               </p>
             </div>
 
@@ -52,21 +56,6 @@ export default function Home() {
           </div>
         </div>
       </main>
-
-      {/* Footer - Bottom App Bar */}
-      <footer className="fixed md:absolute bottom-0 left-0 right-0 border-t border-gray-200 bg-white p-4 z-10">
-        <nav className="flex justify-around relative gap-16">
-          <a href="#" className="text-gray-600 hover:text-gray-900 flex flex-col items-center">
-        <House size={28} />
-          </a>
-          <a href="#" className="absolute -top-8 left-1/2 -translate-x-1/2 bg-green-500 p-4 rounded-full shadow-lg hover:bg-green-600 transition-colors">
-        <Recycle size={32} color="white"/>
-          </a>
-          <a href="#" className="text-gray-600 hover:text-gray-900 flex flex-col items-center">
-        <User size={28} />
-          </a>
-        </nav>
-      </footer>
     </div>
   );
 }
