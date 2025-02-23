@@ -25,9 +25,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-100 min-h-screen`}
       >
-        {children}
+        <div className="md:flex md:items-center md:justify-center md:min-h-screen md:py-8">
+          {/* iPhone mockup wrapper - only visible on md and up */}
+          <div className="md:relative md:w-[420px] md:h-[740px] md:bg-gray-200 md:rounded-[45px] md:shadow-xl md:border-[8px] md:border-gray-300">
+            {/* Actual content */}
+            <div className="md:h-full md:w-full md:rounded-[35px] bg-white overflow-hidden relative">
+              {children}
+            </div>
+          </div>
+        </div>
       </body>
     </html>
   );
